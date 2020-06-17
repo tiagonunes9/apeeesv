@@ -1,0 +1,58 @@
+.navbar {
+    position: fixed;
+    width:100%;
+    opacity:0.7;
+    background-color: black;
+  }
+
+  .link{
+      color:white;
+      font-family: "Oswald";
+      font-weight: bold;
+      opacity:1;
+      font-size:162%;
+      text-align:right;
+  }
+
+  .somos{
+    background-color:#EEC94C;
+    height: 1080px;
+  }
+
+  .eventos{
+    background-color:#E47A3F;
+    height: 1080px;
+    margin-top:-20px;
+  }
+
+  .noticias{
+    background-color:#2F898D;
+    height: 1080px;
+    margin-top:-20px;
+  }
+
+  .contatos{
+    background-color: #6A6A6A;
+    height: 1080px;
+    margin-top:-20px;
+  }
+
+  h1{
+    color:white;
+    font-family: "Oswald";
+    font-weight: bold;
+    text-align:center;
+    font-size:500%;
+  }
+
+  .logo{
+    width:15%;
+  }
+
+  .fundo{
+    width: 100%;
+  }
+
+  ul {
+    list-style-type: none;
+}
