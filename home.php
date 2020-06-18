@@ -21,37 +21,39 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link link" href="#">QUEM SOMOS</a>
+                    <a class="nav-link link" href="#somos">QUEM SOMOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link" href="#">EVENTOS</a>
+                    <a class="nav-link link" href="#eventos">EVENTOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link" href="#">NOTICIAS</a>
+                    <a class="nav-link link" href="#noticias">NOTICIAS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link" href="#">CONTATOS</a>
+                    <a class="nav-link link" href="#contatos">CONTATOS</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <img src="img/escolaviriato.jpg" class="fundo" />
-    <div id="somos" clas="somos">
-        <h1> QUEM SOMOS </h1>
-    </div>
 
-    <div id="eventos" class="eventos">
-        <h1> EVENTOS </h1>
-    </div>
+    
+    <section id="somos" clas="somos">
+        <h1>QUEM SOMOS</h1>
+    </section>
 
-    <div id="noticias" class="noticias">
-        <h1> NOTICIAS </h1>
-    </div>
+    <section id="eventos" class="eventos">
+        <h1>EVENTOS</h1>
+    </section>
 
-    <div id="contatos" class="contatos">
-        <h1> CONTATOS </h1>
-    </div>
+    <section id="noticias" class="noticias">
+        <h1>NOTICIAS</h1>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h1>CONTATOS</h1>
+    </section>
 
 </body>
 

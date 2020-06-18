@@ -16,24 +16,24 @@
 
   .somos{
     background-color:#EEC94C;
-    height: 1080px;
+    height: 100vh;
   }
 
   .eventos{
     background-color:#E47A3F;
-    height: 1080px;
+    height: 100vh;
     margin-top:-20px;
   }
 
   .noticias{
     background-color:#2F898D;
-    height: 1080px;
+    height: 100vh;
     margin-top:-20px;
   }
 
   .contatos{
     background-color: #6A6A6A;
-    height: 1080px;
+    height: 100vh;
     margin-top:-20px;
   }
 
