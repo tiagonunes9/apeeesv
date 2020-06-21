@@ -41,7 +41,12 @@
     </section>
 
     <section id="somos" class="somos">
-        <h1>QUEM SOMOS</h1>
+        <div class="somos-title">
+            <div class="somos-divider"><hr></div>
+            <div class="somos-h1"><h1>QUEM SOMOS</h1></div>
+            <div class="somos-divider"><hr></div>
+        </div>
+        <div class="somos-content"></div>
     </section>
 
     <section id="eventos" class="eventos">

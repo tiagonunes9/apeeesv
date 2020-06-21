@@ -22,10 +22,43 @@
     height: 100%;
   }
 
+  /* SOMOS SECTION CSS RULES */
   .somos {
     background-color:#EEC94C;
     height: 100vh;
   }
+  .somos-title {
+    height: 15ß;
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .somos-content {
+    margin: 0;
+    padding: 0;
+    height: 85%;
+  }
+  .somos-divider {
+    flex-grow: 1;
+    width: 30%;
+    padding: 0 5%; 
+  }
+  .somos-divider hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 10px;
+    background-color: white;
+  }
+  .somos-h1 {
+    flex-grow: 1;
+    width: 40%;
+    text-align: center;
+  }
+/* FIM SOMOS SECTION CSS RULES */
 
   .eventos{
     background-color:#E47A3F;
