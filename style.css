@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 .navbar {
     position: fixed;
     width:100%;
@@ -7,7 +9,7 @@
 
   .link{
       color:white;
-      font-family: "Oswald";
+      font-family: 'Oswald', sans-serif;
       font-weight: bold;
       opacity:1;
       font-size:162%;
@@ -22,13 +24,12 @@
     height: 100%;
   }
 
-  /* SOMOS SECTION CSS RULES */
-  .somos {
-    background-color:#EEC94C;
+  section {
     height: 100vh;
   }
-  .somos-title {
-    height: 15ß;
+
+  .div-title {
+    height: 15%;
     margin:0;
     padding: 0;
     display: flex;
@@ -36,51 +37,53 @@
     align-items: center;
     justify-content: center;
   }
-  .somos-content {
-    margin: 0;
-    padding: 0;
-    height: 85%;
-  }
-  .somos-divider {
+  .title-divider-left {
     flex-grow: 1;
     width: 30%;
-    padding: 0 5%; 
+    padding: 0 0 0 10%; 
   }
-  .somos-divider hr {
+  .title-divider-right {
+    flex-grow: 1;
+    width: 30%;
+    padding: 0 10% 0 0; 
+  }
+  .title-divider-left hr, .title-divider-right hr {
     margin: 0;
     padding: 0;
     border: 0;
     height: 10px;
     background-color: white;
   }
-  .somos-h1 {
+  .title-h1 {
     flex-grow: 1;
     width: 40%;
     text-align: center;
   }
-/* FIM SOMOS SECTION CSS RULES */
+  .div-content {
+    margin: 0;
+    padding: 0;
+    height: 85%;
+  }
+
+  .somos {
+    background-color:#EEC94C;
+  }
 
   .eventos{
     background-color:#E47A3F;
-    height: 100vh;
-    margin-top:-20px;
   }
 
   .noticias{
     background-color:#2F898D;
-    height: 100vh;
-    margin-top:-20px;
   }
 
   .contatos{
     background-color: #6A6A6A;
-    height: 100vh;
-    margin-top:-20px;
   }
 
   h1{
     color:white;
-    font-family: "Oswald";
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-align:center;
     font-size:500%;
