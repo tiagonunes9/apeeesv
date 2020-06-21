@@ -43,7 +43,7 @@
     <section id="somos" class="somos">
         <div class="div-title">
             <div class="title-divider-left"><hr></div>
-            <div class="title-h1"><h1>QUEM SOMOS</h1></div>
+            <div class="title-h1"><h1>Quem somos</h1></div>
             <div class="title-divider-right"><hr></div>
         </div>
         <div class="div-content"></div>
@@ -51,21 +51,29 @@
 
     <section id="eventos" class="eventos">
         <div class="div-title">
-            <div class="title-divider"><hr></div>
-            <div class="title-h1"><h1>EVENTOS</h1></div>
-            <div class="title-divider"><hr></div>
+            <div class="title-divider-left"><hr></div>
+            <div class="title-h1"><h1>Eventos</h1></div>
+            <div class="title-divider-right"><hr></div>
         </div>
         <div class="div-content"></div>
     </section>
-        
-    </section>
 
     <section id="noticias" class="noticias">
-        <h1>NOTICIAS</h1>
+        <div class="div-title">
+            <div class="title-divider-left"><hr></div>
+            <div class="title-h1"><h1>Notícias</h1></div>
+            <div class="title-divider-right"><hr></div>
+        </div>
+        <div class="div-content"></div>
     </section>
 
     <section id="contatos" class="contatos">
-        <h1>CONTATOS</h1>
+        <div class="div-title">
+            <div class="title-divider-left"><hr></div>
+            <div class="title-h1"><h1>Contactos</h1></div>
+            <div class="title-divider-right"><hr></div>
+        </div>
+        <div class="div-content"></div>
     </section>
 
 </body>
