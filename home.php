@@ -36,10 +36,11 @@
         </div>
     </nav>
 
-    <img src="img/escolaviriato.jpg" class="fundo" />
+    <section id="slide-image" class="slide-image">
+        <img src="img/escolaviriato.jpg" class="fundo" />
+    </section>
 
-    
-    <section id="somos" clas="somos">
+    <section id="somos" class="somos">
         <h1>QUEM SOMOS</h1>
     </section>
 
