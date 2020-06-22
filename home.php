@@ -173,9 +173,11 @@
             </div>
         </div>
         <div class="div-content">
-            <ul class="flex-container">
-                <ul class="flex-container formulario">
-                    <h2>QUER FALAR CONNOSCO? </h2>
+            <div class="contacts-content">
+                <div class="contacts-left">
+                    <div class="title">
+                        <h2>QUER FALAR CONNOSCO?</h2>
+                    </div>
                     <div class="form-group">
                         <p class="forms">Nome</p>
                         <input type="text" name="nome" class="form-control">
@@ -190,20 +192,22 @@
                         <textarea class="form-control" rows="5" cols="50"></textarea>
                     </div>
                     <button type="submit" class="btn btn-default enviar">ENVIAR</button>
-                </ul>
-
-                <li class="flex-x">
-                <li class="flex-item direito">
-                    <img src="img/home.png" class="icone">
-                    <p class="info">Estrada Velha de Abraveses, 3510-204 Viseu</p>
-                    <img src="img/mail.png" class="icone">
-                    <p class="info">apeeviriato@esviriato.pt</p>
-                    <img src="img/phone.png" class="icone">
-                    <p class="info">232 418 330</p><br>
-                    <p class="info">961 970 673</p>
-                </li>
-                </li>
-            </ul>
+                </div>
+                <div class="contacts-right">
+                    <div class="line">
+                        <img src="img/home.png" class="icone">
+                        <p class="info">Estrada Velha de Abraveses, 3510-204 Viseu</p>
+                    </div>
+                    <div class="line">
+                        <img src="img/mail.png" class="icone">
+                        <p class="info">apeeviriato@esviriato.pt</p>
+                    </div>
+                    <div class="line">
+                        <img src="img/phone.png" class="icone">
+                        <p class="info">232 418 330 &nbsp;&nbsp;|&nbsp;&nbsp; 961 970 673</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
