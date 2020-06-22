@@ -235,3 +235,18 @@ h3{
     max-width:45%;
     max-height:45%;
 }
+
+.cima{
+margin-top: -5.5%;
+width: auto;
+margin-left: -1%;
+margin-bottom: -2%;
+}
+
+.baixo{
+  margin-bottom: -5%;
+  margin-top:-2%;
+  margin-left: -1.5%;
+  width: auto;
+  transform: rotate(180deg)
+}

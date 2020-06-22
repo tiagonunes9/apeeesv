@@ -36,12 +36,13 @@
             </ul>
         </div>
     </nav>
-
     <section id="slide-image" class="slide-image">
         <img src="img/escolaviriato.jpg" class="fundo" />
+        
     </section>
-
+    <img src="img/cima.png" class="cima"/>
     <section id="somos" class="somos">
+    
         <div class="div-title">
             <div class="title-divider-left">
                 <hr>
@@ -128,7 +129,7 @@
                 </table>
         </div>
     </section>
-
+    <img src="img/cima.png" class="baixo" />
     <section id="eventos" class="eventos">
         <div class="div-title">
             <div class="title-divider-left">
