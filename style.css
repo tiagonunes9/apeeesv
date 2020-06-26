@@ -70,7 +70,7 @@
   }
   .title-h1 {
     flex-grow: 1;
-    width: 40%;
+    width: 40em;
     text-align: center;
   }
   .div-content {
@@ -100,6 +100,7 @@
 
   .noticias{
     background-color:#2F898D;
+    height: auto;
   }
 
   .contatos{
@@ -265,4 +266,31 @@ margin-bottom: -2%;
   margin-left: -1.5%;
   width: auto;
   transform: rotate(180deg);
+}
+
+/*** EVENTOS ***/
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  list-style: none;
+}
+
+.flex-item {
+  background: blue;
+  width: 250px;
+  height: 200px;
+  margin-top: 6%;
+  margin-left: 3%;
+  margin-right:3%;
+  margin-bottom:5%;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
 }

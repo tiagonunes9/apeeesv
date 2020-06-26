@@ -1,5 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt">
+<?php 
+/*------------------------------------------------codigo ligar ao servidor------------------------------------------------------*/
+$server_name="localhost";
+$username = "root"; /*--credenciais ana--*/
+$password = "";   /*--credenciais ana--*/
+$database = "apeeesv"; /*--nome da BD--*/
+$conn = mysqli_connect($server_name,$username, $password, $database); /*--mudar "localhost" para o IP--*/
+
+
+/*-----------------------------------------------FIM codigo ligar ao servidor--------------------------------------------------*/
+
+/*--querys--*/
+
+$query = "SELECT * FROM eventos"; 
+$query = "SELECT * FROM noticias";
+$query = "SELECT * FROM suporte";
+/*-- FIM querys--*/
+?> 
 
 <head>
     <title>APEEESV</title>
@@ -56,7 +74,8 @@
         </div>
         <div class="div-content">
             <p class="about">A Escola ocupa um lugar primordial na educação das crianças enquanto parte integrante de um grupo de diversos intervenientes: alunos, famílias, professores, técnicos-pedagógicos, assistentes operacionais... todos e cada um com missões insubstituíveis ao longo de todo o processo de aprendizagem.
-                Citando o Projeto Educativo da Escola Secundária Viriato 2016-2020, “Estes intervenientes não são meros atores no processo educativo: identificam-no, constroem-no e desenvolvem-no, sendo as suas atuação e interação condições básicas para o sucesso dos resultados e para a missão coletiva de desenvolvimento e valorização da sociedade em que estão integrados”. Neste sentido, entendemos que é dever da Associação de Pais e Encarregados de Educação da Escola Secundária Viriato: contribuir para o desenvolvimento saudável dos alunos através da colaboração entre os diversos intervenientes da comunidade educativa, contribuindo para o bom funcionamento da Escola e estimular a comunicação e maior participação dos pais e encarregados de educação, enquanto membros de pleno direito da comunidade escolar, promovendo uma parceria franca e cooperante entre a Escola e as famílias.
+                Citando o Projeto Educativo da Escola Secundária Viriato 2016-2020, “Estes intervenientes não são meros atores no processo educativo: identificam-no, constroem-no e desenvolvem-no, sendo as suas atuação e interação condições básicas para o sucesso dos resultados e para a missão coletiva de desenvolvimento e valorização da sociedade em que estão integrados”. 
+                <br>Neste sentido, entendemos que é dever da Associação de Pais e Encarregados de Educação da Escola Secundária Viriato: contribuir para o desenvolvimento saudável dos alunos através da colaboração entre os diversos intervenientes da comunidade educativa, contribuindo para o bom funcionamento da Escola e estimular a comunicação e maior participação dos pais e encarregados de educação, enquanto membros de pleno direito da comunidade escolar, promovendo uma parceria franca e cooperante entre a Escola e as famílias.
             </p><br>
             <h2>Órgãos Sociais da Associação de Pais e Encarregados de Educação do ano letivo de 2019/2020</2><br><br><br>
                 <img src="img/associacao.jpg" class="associacao" /><br><br>
@@ -142,7 +161,8 @@
                 <hr>
             </div>
         </div>
-        <div class="div-content"></div>
+        <div class="div-content">
+        </div>
     </section>
 
     <section id="noticias" class="noticias">
@@ -157,7 +177,22 @@
                 <hr>
             </div>
         </div>
-        <div class="div-content"></div>
+        <div class="div-content">
+        <ul class="flex-container">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+            <li class="flex-item">6</li>
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+            <li class="flex-item">6</li>
+        </ul>
+        </div>
     </section>
 
     <section id="contatos" class="contatos">
