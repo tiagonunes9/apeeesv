@@ -9,8 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="imagem/png" href="logo.png" />
-    <link rel="shortcut icon" href="./simples.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/simples.ico" type="image/x-icon" />
 
 </head>
 
