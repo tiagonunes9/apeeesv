@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
         $sql = "insert into suporte (nome, email, assunto, mensagem, estado) value('$nome','$email','$assunto','$mensagem','$estado')";
         
         if (mysqli_query($conn, $sql)) {
-            echo "New record has been added successfully !";
+            header("Location: home.php#contatos");
          } else {
             echo "Error: " . $sql . ":-" . mysqli_error($conn);
          }

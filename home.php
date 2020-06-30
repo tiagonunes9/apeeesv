@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <title>APEEESV</title>
     <meta charset="utf-8">
@@ -17,7 +18,7 @@
 
     <nav class="navbar navbar-dark bg-dark navbar">
         <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo"></a>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link link" href="#somos">QUEM SOMOS</a>
@@ -127,8 +128,9 @@
                     </tbody>
                 </table>
         </div>
+        
     </section>
-    <img src="img/cima.png" class="baixo" />
+    <img src="img/cima.png" class="baixo" /><br><br><br><br><br>
     <section id="eventos" class="eventos">
         <div class="div-title">
             <div class="title-divider-left">
@@ -209,7 +211,10 @@
                             <input type="hidden" name="estado" value="0" class="form-control">
                     </div>
                     <button type="submit" class="btn btn-default enviar" name="submit" value="submit">ENVIAR</button>
-                    
+                    <div class="alert alert-success" role="alert">
+                        Entraremos em contacto consigo assim que possível!
+                    </div>
+
                     </form>
                 </div>
                 <div class="contacts-right">

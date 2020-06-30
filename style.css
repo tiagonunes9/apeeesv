@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
   /***** ESTILOS GLOBAIS ****/
-
+  body{
+    background-color:#E47A3F;
+  }
+  
   .navbar {
     position: fixed;
     width:100%;
@@ -36,6 +39,14 @@
       font-size:162%;
       text-align:center;
   }
+  .link{
+      color:white;
+      font-family: 'Oswald', sans-serif;
+      font-weight: bold;
+      opacity:1;
+      font-size:162%;
+      text-align:center;
+  }
 
   section {
     height: 100vh;
@@ -44,7 +55,7 @@
 
   .div-title {
     height: 15%;
-    margin:0;
+    margin-top:5%;
     padding: 0;
     display: flex;
     flex-wrap: nowrap;
@@ -91,7 +102,7 @@
 
   .somos {
     background-color:#EEC94C;
-    height: auto;
+    height: 100%;
   }
 
   .eventos{
@@ -180,6 +191,7 @@
 }
 .contacts-right {
   flex-grow: 1;
+  flex-wrap: nowrap;
   width: 50%;
   padding-left: 10%;
   padding-right: 10%;
@@ -256,7 +268,7 @@ h3{
 .cima{
 margin-top: -5.5%;
 width: auto;
-margin-left: -1%;
+margin-left: -1.5%;
 margin-bottom: -2%;
 }
 
@@ -265,7 +277,7 @@ margin-bottom: -2%;
   margin-top:-2%;
   margin-left: -1.5%;
   width: auto;
-  transform: rotate(180deg);
+  transform: rotate(180.5deg);
 }
 
 /*** EVENTOS ***/
