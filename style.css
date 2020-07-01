@@ -3,6 +3,7 @@
   /***** ESTILOS GLOBAIS ****/
   body{
     background-color:#E47A3F;
+    width:100vw;
   }
   
   .navbar {
@@ -103,20 +104,24 @@
   .somos {
     background-color:#EEC94C;
     height: 100%;
+    width:100vw;
   }
 
   .eventos{
     background-color:#E47A3F;
+    width:100vw;
   }
 
   .noticias{
     background-color:#2F898D;
     height: auto;
+    width:100vw;
   }
 
   .contatos{
     background-color: #6A6A6A;
     height: auto;
+    width:100vw;
   }
 
   h1{
@@ -267,7 +272,7 @@ h3{
 
 .cima{
 margin-top: -5.5%;
-width: auto;
+width:auto;
 margin-left: -1.5%;
 margin-bottom: -2%;
 }
@@ -276,7 +281,7 @@ margin-bottom: -2%;
   margin-bottom: -5%;
   margin-top:-2%;
   margin-left: -1.5%;
-  width: auto;
+  width:100%;
   transform: rotate(180.5deg);
 }
 
