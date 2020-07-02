@@ -16,6 +16,8 @@
 
 <body>
 
+    
+
     <nav class="navbar navbar-dark bg-dark navbar">
         <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo"></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -128,7 +130,7 @@
                     </tbody>
                 </table>
         </div>
-        
+
     </section>
     <img src="img/cima.png" class="baixo" /><br><br><br><br><br>
     <section id="eventos" class="eventos">
