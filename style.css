@@ -1,314 +1,417 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-  /***** ESTILOS GLOBAIS ****/
-  body{
-    background-color:#E47A3F;
-    width:100vw;
-  }
-  
-  .navbar {
-    position: fixed;
-    width:100%;
-    height: 60px;
-    opacity:0.7;
+/***** ESTILOS GLOBAIS ****/
+
+body {
+    background-color: #E47A3F;
+    width: 100vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    opacity: 0.7;
     background-color: black;
-  }
-  .navbar-brand {
-    float: left;
-    width: 50%;
-    display: flex;
-  }
-  .navbar-nav {
-    float: right;
-    width: 50%;
+    width: 100%;
     height: 60px;
-    padding-right: 2.5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+    position: fixed;
+}
 
-  .navbar-nav>li {
-    flex-grow: 1;
-  }
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
 
-  .link{
-      color:white;
-      font-family: 'Oswald', sans-serif;
-      font-weight: bold;
-      opacity:1;
-      font-size:162%;
-      text-align:center;
-  }
-  .link{
-      color:white;
-      font-family: 'Oswald', sans-serif;
-      font-weight: bold;
-      opacity:1;
-      font-size:162%;
-      text-align:center;
-  }
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: -7px 25px;
+}
 
-  section {
+nav ul li a {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 162%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    transition: .5s;
+    color: white;
+    text-decoration: none;
+    font-size: 170%;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 27px;
+        padding-left: 25px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        margin-right: 40px;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+.link {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 162%;
+    text-align: center;
+}
+
+.link {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 162%;
+    text-align: center;
+}
+
+section {
     height: 100vh;
     overflow: auto;
-  }
+}
 
-  .div-title {
+.div-title {
     height: 15%;
-    margin-top:5%;
+    margin-top: 5%;
     padding: 0;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-  }
-  .title-divider-left {
+}
+
+.title-divider-left {
     flex-grow: 1;
     width: 30%;
-    padding: 0 0 0 10%; 
-  }
-  .title-divider-right {
+    padding: 0 0 0 10%;
+}
+
+.title-divider-right {
     flex-grow: 1;
     width: 30%;
-    padding: 0 10% 0 0; 
-  }
-  .title-divider-left hr, .title-divider-right hr {
+    padding: 0 10% 0 0;
+}
+
+.title-divider-left hr,
+.title-divider-right hr {
     margin: 0;
     padding: 0;
     border: 0;
     height: 10px;
     background-color: white;
-  }
-  .title-h1 {
+}
+
+.title-h1 {
     flex-grow: 1;
     width: 40em;
     text-align: center;
-  }
-  .div-content {
+}
+
+.div-content {
     margin: 0;
     padding: 0;
     height: 85%;
-  }
+}
 
-  /***** FIM DOS ESTILOS GLOBAIS ****/
 
-  .slide-image {
+/***** FIM DOS ESTILOS GLOBAIS ****/
+
+.slide-image {
     height: 95vh;
-  }
-  .fundo{
+}
+
+.fundo {
     width: 100vw;
     height: 95vh;
-  }
+}
 
-  .somos {
-    background-color:#EEC94C;
+.somos {
+    background-color: #EEC94C;
     height: 100%;
-    width:100vw;
-  }
+    width: 100%;
+}
 
-  .eventos{
-    background-color:#E47A3F;
-    width:100vw;
-  }
+.eventos {
+    background-color: #E47A3F;
+    width: 100vw;
+}
 
-  .noticias{
-    background-color:#2F898D;
+.noticias {
+    background-color: #2F898D;
     height: auto;
-    width:100vw;
-  }
+    width: 100vw;
+}
 
-  .contatos{
+.contatos {
     background-color: #6A6A6A;
     height: auto;
-    width:100vw;
-  }
+    width: 100vw;
+}
 
-  h1{
-    color:white;
+h1 {
+    color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    text-align:center;
+    text-align: center;
     text-transform: uppercase;
-    font-size:500%;
+    font-size: 500%;
     margin-top: 0px;
     padding-top: 20px;
-  }
+}
 
-  h2{
-    color:white;
+h2 {
+    color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    font-size:250%;
-  }
+    font-size: 250%;
+}
 
-  .logo{
-    height: 200%;
-    margin-top: -1%;
-    width:auto;
-  }
+.logo {
+    height: 95%;
+    margin-left: 0.2%;
+    width: auto;
+}
 
-  ul {
+ul {
     list-style-type: none;
 }
 
+
 /***Contactos***/
 
-.contacts-content{
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center; 
-  justify-content: space-around;
-  width: 100vw;
+.contacts-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
 }
+
 .contacts-left {
-  flex-grow: 1;
-  width: 50%;
-  padding-left: 10%;
-  padding-right: 10%;
+    flex-grow: 1;
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
+
 .contacts-left .title h2 {
-  margin-left: 0;
+    margin-left: 0;
 }
+
 .formulario {
-  width: 100%;
+    width: 100%;
 }
-.forms{
-  color:white;
-  font-family: 'Oswald', sans-serif;
-  font-weight: medium;
-  font-size:150%;
-  padding-top: 30px;
+
+.forms {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: medium;
+    font-size: 150%;
+    padding-top: 30px;
 }
+
 .form-group input {
-  height: 58px;
+    height: 58px;
 }
+
 .form-group textarea {
-  height: 150px;
+    height: 150px;
 }
-.enviar{
-  background-color: black;
-  color:white;
-  font-family: 'Oswald', sans-serif;
-  font-weight: bold;
-  width:100%;
-  height: 60px;
-  border: 1px solid #707070;
+
+.enviar {
+    background-color: black;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #707070;
 }
+
 .contacts-right {
-  flex-grow: 1;
-  flex-wrap: nowrap;
-  width: 50%;
-  padding-left: 10%;
-  padding-right: 10%;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
+
 .contacts-right .line {
-  padding-top: 75px;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: left;
+    padding-top: 75px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
 }
-.icone{
-  flex-grow: 1;
-  width: 5%;
-  height: auto;
+
+.icone {
+    flex-grow: 1;
+    width: 5%;
+    height: auto;
 }
-.info{
-  flex-grow: 1;
-  width: 85%;
-  color:white;
-  font-family: 'Oswald', sans-serif;
-  font-weight: bold;
-  font-size:150%;
-  padding-left: 5%;
+
+.info {
+    flex-grow: 1;
+    width: 85%;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    padding-left: 5%;
 }
+
 
 /***QUEM SOMOS***/
 
-.about{
-  color:white;
-  font-family: "oswald";
-  font-size: 1.5vw;
-  text-align: justify;
-  margin-left:10%;
-  margin-right:10%;
-  margin-top:5%;
+.about {
+    color: white;
+    font-family: "oswald";
+    font-size: 1.5vw;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
 }
 
-.nomes{
-  color:white;
-  font-family:"oswald";
-  font-weight: lighter;
+.nomes {
+    color: white;
+    font-family: "oswald";
+    font-weight: lighter;
 }
 
-.cargo{
-  color:white;
-  font-family:"oswald";
-  font-weight: medium;
+.cargo {
+    color: white;
+    font-family: "oswald";
+    font-weight: medium;
 }
 
-.tabela{
-  text-align: justify;
-  margin-left:10%;
-  margin-top:5%;
-  font-size:1vw;
+.tabela {
+    text-align: justify;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 1vw;
 }
 
-h2{
-  margin-left:10%;
-  color:white;
-  font-family:"oswald";
-}
-h3{
-  margin-left:10%;
-  color:white;
-  font-family:"oswald";
+h2 {
+    margin-left: 10%;
+    color: white;
+    font-family: "oswald";
 }
 
-.associacao{
-    max-width:45%;
-    max-height:45%;
+h3 {
+    margin-left: 10%;
+    color: white;
+    font-family: "oswald";
 }
 
-.cima{
-margin-top: -5.5%;
-width:auto;
-margin-left: -1.5%;
-margin-bottom: -2%;
+.associacao {
+    max-width: 45%;
+    max-height: 45%;
 }
 
-.baixo{
-  margin-bottom: -5%;
-  margin-top:-2%;
-  margin-left: -1.5%;
-  width:100%;
-  transform: rotate(180.5deg);
+.cima {
+    margin-top: -5.5%;
+    width: 102%;
+    margin-left: -1.5%;
+    margin-bottom: -2%;
+    padding: 0;
 }
+
+.baixo {
+    margin-bottom: -5%;
+    margin-top: -2%;
+    margin-left: -1.5%;
+    width: 102%;
+    transform: rotate(180.5deg);
+    padding: 0;
+}
+
 
 /*** EVENTOS ***/
 
 .flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 0;
-  margin-left: 10%;
-  margin-right: 10%;
-  list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    list-style: none;
 }
 
 .flex-item {
-  background: blue;
-  width: 250px;
-  height: 200px;
-  margin-top: 6%;
-  margin-left: 3%;
-  margin-right:3%;
-  margin-bottom:5%;
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
+    background: blue;
+    width: 250px;
+    height: 200px;
+    margin-top: 6%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
 }

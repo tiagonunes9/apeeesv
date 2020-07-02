@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="img/simples.ico" type="image/x-icon" />
@@ -16,27 +17,20 @@
 
 <body>
 
-    
-
-    <nav class="navbar navbar-dark bg-dark navbar">
-        <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo"></a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link link" href="#somos">QUEM SOMOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link" href="#eventos">EVENTOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link" href="#noticias">NOTICIAS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link" href="#contatos">CONTATOS</a>
-                </li>
-            </ul>
-        </div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><a href="#slide-image"><img src="img/logo.png" class="logo"></a></label>
+        <ul>
+            <li><a href="#somos">Quem somos</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#contatos">Contactos</a></li>
+        </ul>
     </nav>
+
     <section id="slide-image" class="slide-image">
         <img src="img/escolaviriato.jpg" class="fundo" />
 
@@ -162,20 +156,20 @@
             </div>
         </div>
         <div class="div-content">
-            <ul class="flex-container">
-                <li class="flex-item">1</li>
-                <li class="flex-item">2</li>
-                <li class="flex-item">3</li>
-                <li class="flex-item">4</li>
-                <li class="flex-item">5</li>
-                <li class="flex-item">6</li>
-                <li class="flex-item">1</li>
-                <li class="flex-item">2</li>
-                <li class="flex-item">3</li>
-                <li class="flex-item">4</li>
-                <li class="flex-item">5</li>
-                <li class="flex-item">6</li>
-            </ul>
+            <div class="flex-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+                <div class="flex-item">6</div>
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+                <div class="flex-item">6</div>
+            </div>
         </div>
     </section>
 
