@@ -194,16 +194,16 @@
                     <div class="form-group">
                         <form action="insert.php" method="post">
                             <p class="forms">Nome</p>
-                            <input type="text" name="nome" class="form-control" required>
+                            <input type="text" name="nome" class="form-control" placeholder="Nome" required>
 
                             <p class="forms">Email</p>
-                            <input type="email" name="email" class="form-control" required>
+                            <input type="email" name="email" class="form-control" placeholder="Email" required>
 
                             <p class="forms">Assunto</p>
-                            <input type="text" name="assunto" class="form-control" required>
+                            <input type="text" name="assunto" class="form-control" Placeholder="Assunto" required>
 
                             <p class="forms">Mensagem</p>
-                            <textarea class="form-control" rows="5" cols="50" name="mensagem" required></textarea>
+                            <textarea class="form-control" rows="5" cols="50" name="mensagem" placeholder="Mensagem" required></textarea>
                             <input type="hidden" name="estado" value="0" class="form-control">
                     </div>
                     <button type="submit" class="btn btn-default enviar" name="submit" value="submit">ENVIAR</button>
