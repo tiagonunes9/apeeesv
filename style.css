@@ -416,3 +416,35 @@ h3 {
     text-align: center;
     border-radius: 15px;
 }
+
+.containers {
+    position: relative;
+    width: 50%;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 15px;
+    width: 50%;
+    height: auto;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.texts {
+    background-color: gray;
+    font-family: "Oswald";
+    font-weight: bold;
+    color: white;
+    font-size: 50%;
+    padding: 16px 32px;
+}

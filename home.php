@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt">
-
+<?php
+            $server = "localhost";
+            $username = "root";
+            $password = "";
+            $database = "apeeesv";
+            $conn = mysqli_connect($server, $username, $password, $database);
+            
+             // Check connection
+             if (mysqli_connect_errno()) {
+                echo "Failed to connect to MySQL: " . mysqli_connect_error();
+            }
+            ?>
 <head>
     <title>APEEESV</title>
     <meta charset="utf-8">
@@ -143,42 +154,38 @@
             </div>
         </div>
         <div class="div-content">
-            <?php
-            $server="localhost";
-            $username = "root";
-            $password = "";
-            $database = "apeeesv";
-            $conn = mysqli_connect($server,$username, $password, $database);
-            // Check connection
-            if (mysqli_connect_errno()) {
-                echo "Failed to connect to MySQL: " . mysqli_connect_error();
-            }
+            
+           <?php
 
             $sql = "SELECT * FROM Eventos";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
                 // output data of each row
-                while($row = $result->fetch_assoc()) {
-                  echo "Nome: " . $row["nome"] ."<br>";
+                while ($row = $result->fetch_assoc()) {
+                    '<div class="containers">';
+                    echo '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">' . $row['<img src="php echo base_url(upload/'].'</button>';
+                    '<div class="middle">';
+                    
+                    echo '<div class="texts" style="visibility:none;">' . $row["nome"] . '</div>';
+                    '</div>';
+                    '</div>';
                 }
-              } else {
+            } else {
                 echo "0 results";
-              }
+            }
             ?>
-
-
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Evento1</button>
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Titulo do Evento</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">
+                           <?php echo $row['nome'];?></h5>
                             </button>
                         </div>
                         <div class="modal-body">
-                            Texto do Evento
+                           
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
