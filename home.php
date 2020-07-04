@@ -155,50 +155,49 @@ if (mysqli_connect_errno()) {
             </div>
         </div>
         <div class="div-content">
-            
-            <?php
+            <div class="flex-container">
+                <?php
 
-            $sql = "SELECT * FROM eventos";
-            $result = $conn->query($sql);
+                $sql = "SELECT * FROM eventos";
+                $result = $conn->query($sql);
                 // output data of each row
-                while($row = mysqli_fetch_assoc($result))
-                {
+                while ($row = mysqli_fetch_assoc($result)) {
                     $id_evento =  $row['id_evento'];
                     $nome =     $row['nome'];
                     $descricao =  $row['descricao'];
                     $imagem =  $row['imagem'];
                     $data =  $row['data'];
                     $local =  $row['local'];
-                
-            ?>
-            <a href="#" data-toggle="modal" data-target="#mymodal_<?php echo $id_evento;?>">
-            <div class="col-sm-4">
-                <?php 
-                echo '<div class="flex-item">'. $imagem.'</div>';
+
                 ?>
-            </div>
-            </a>
-            <!-- Modal -->
-            <div id="mymodal_<?php echo $id_evento;?>" class="modal fade" role="dialog">                
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title modalt" id="exampleModalLabel">
-                            <?php echo $nome; ?></h4>
-                            </button>
+                    <a href="#" data-toggle="modal" data-target="#mymodal_<?php echo $id_evento; ?>">
+                        <div class="col-sm-4">
+                            <?php
+                            echo '<div class="flex-item">' . $imagem . '</div>';
+                            ?>
                         </div>
-                        <div class="modal-body">
-                        <h5><?php echo $local; ?></h5>
-                        <h5><?php echo $data; ?></h5><br>
-                        <h5><?php echo $descricao; ?></h5><br>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </a>
+                    <!-- Modal -->
+                    <div id="mymodal_<?php echo $id_evento; ?>" class="modal fade" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title modalt" id="exampleModalLabel">
+                                        <?php echo $nome; ?></h4>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5><?php echo $local; ?></h5>
+                                    <h5><?php echo $data; ?></h5><br>
+                                    <h5><?php echo $descricao; ?></h5><br>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <?php } ?>
+                <?php } ?>
             </div>
         </div>
     </section>
