@@ -196,6 +196,8 @@ section {
 .eventos {
     background-color: #E47A3F;
     width: 100vw;
+    height: 100%;
+    margin-bottom: 2%;
 }
 
 .noticias {
@@ -412,39 +414,29 @@ h3 {
     line-height: 150px;
     color: white;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 200%;
     text-align: center;
     border-radius: 15px;
 }
 
-.containers {
-    position: relative;
-    width: 50%;
-}
-
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 70%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    border-radius: 15px;
-    width: 50%;
-    height: auto;
-}
-
-.container:hover .middle {
-    opacity: 1;
-}
-
-.texts {
-    background-color: gray;
+.modalt {
     font-family: "Oswald";
     font-weight: bold;
+    text-transform: uppercase;
+}
+
+.flex-item:hover {
+    background: blue;
+    width: 250px;
+    height: 200px;
+    margin-top: 6%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+    line-height: 150px;
     color: white;
-    font-size: 50%;
-    padding: 16px 32px;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+    border-radius: 15px;
 }

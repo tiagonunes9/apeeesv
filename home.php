@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt">
 <?php
-            $server = "localhost";
-            $username = "root";
-            $password = "";
-            $database = "apeeesv";
-            $conn = mysqli_connect($server, $username, $password, $database);
-            
-             // Check connection
-             if (mysqli_connect_errno()) {
-                echo "Failed to connect to MySQL: " . mysqli_connect_error();
-            }
-            ?>
+$server = "localhost";
+$username = "root";
+$password = "";
+$database = "apeeesv";
+$conn = mysqli_connect($server, $username, $password, $database);
+
+// Check connection
+if (mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+?>
+
 <head>
     <title>APEEESV</title>
     <meta charset="utf-8">
@@ -155,43 +156,49 @@
         </div>
         <div class="div-content">
             
-           <?php
+            <?php
 
-            $sql = "SELECT * FROM Eventos";
+            $sql = "SELECT * FROM eventos";
             $result = $conn->query($sql);
-
-            if ($result->num_rows > 0) {
                 // output data of each row
-                while ($row = $result->fetch_assoc()) {
-                    '<div class="containers">';
-                    echo '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">' . $row['<img src="php echo base_url(upload/'].'</button>';
-                    '<div class="middle">';
-                    
-                    echo '<div class="texts" style="visibility:none;">' . $row["nome"] . '</div>';
-                    '</div>';
-                    '</div>';
-                }
-            } else {
-                echo "0 results";
-            }
+                while($row = mysqli_fetch_assoc($result))
+                {
+                    $id_evento =  $row['id_evento'];
+                    $nome =     $row['nome'];
+                    $descricao =  $row['descricao'];
+                    $imagem =  $row['imagem'];
+                    $data =  $row['data'];
+                    $local =  $row['local'];
+                
             ?>
+            <a href="#" data-toggle="modal" data-target="#mymodal_<?php echo $id_evento;?>">
+            <div class="col-sm-4">
+                <?php 
+                echo '<div class="flex-item">'. $imagem.'</div>';
+                ?>
+            </div>
+            </a>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div id="mymodal_<?php echo $id_evento;?>" class="modal fade" role="dialog">                
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                           <?php echo $row['nome'];?></h5>
+                            <h4 class="modal-title modalt" id="exampleModalLabel">
+                            <?php echo $nome; ?></h4>
                             </button>
                         </div>
                         <div class="modal-body">
-                           
+                        <h5><?php echo $local; ?></h5>
+                        <h5><?php echo $data; ?></h5><br>
+                        <h5><?php echo $descricao; ?></h5><br>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
+            </div>
+            <?php } ?>
             </div>
         </div>
     </section>
